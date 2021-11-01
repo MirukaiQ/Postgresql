@@ -80,3 +80,17 @@ CREATE TABLE a(
   TCL - Transaction Control Lang | COMMIT REVOKE
 
 */
+
+SELECT max(height)
+FROM users;
+
+
+SELECT min(height)
+FROM users;
+
+SELECT count(first_name = 'Tina')
+FROM users;
+
+SELECT avg(height), first_name
+FROM users
+GROUP BY first_name;
